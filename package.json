@@ -10,14 +10,27 @@
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:vscode-git-quick-commit.helloWorld"
+        "onCommand:vscode-git-quick-commit.selectionCommentGitCommit"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
+		"menus": {
+			"editor/title": [
+			 {
+				"when": "editorTextFocus",
+				"command": "vscode-git-quick-commit.selectionCommentGitCommit",
+				"group": "navigation@1"
+			 }
+			]
+		 },
 		"commands": [
 			{
-				"command": "vscode-git-quick-commit.helloWorld",
-                "title": "Hello World"
+				"command": "vscode-git-quick-commit.selectionCommentGitCommit",
+        "title": "Selection Comment Git Commit",
+				"icon": {
+				 "light": "images/rocket.svg",
+				 "dark": "images/rocket.svg"
+				}
 			}
 		]
 	},
