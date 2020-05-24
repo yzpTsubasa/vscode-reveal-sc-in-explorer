@@ -26,7 +26,7 @@
 		"commands": [
 			{
 				"command": "vscode-git-quick-commit.selectionCommentGitCommit",
-        "title": "Selection Comment Git Commit",
+        "title": "Selection Comment Git Commit: Quick Commit",
 				"icon": {
 				 "light": "images/rocket.svg",
 				 "dark": "images/rocket.svg"
