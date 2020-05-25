@@ -3,12 +3,20 @@
 	"displayName": "Git Quick Commit",
 	"description": "Quick commit with select text",
 	"version": "0.0.1",
+	"license": "MIT",
+  "publisher": "yoko0180",
 	"engines": {
 		"vscode": "^1.45.0"
 	},
 	"categories": [
 		"Other"
 	],
+	"keywords": [
+    "git",
+    "commit",
+    "quick"
+	],
+  "icon": "images/icon.png",
 	"activationEvents": [
         "onCommand:vscode-git-quick-commit.selectionCommentGitCommit"
 	],
