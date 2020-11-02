@@ -4,7 +4,7 @@
 	"description": "Quick commit with select text",
 	"version": "0.0.1",
 	"license": "MIT",
-	"publisher": "yzpTsubasa",
+	"publisher": "TsubasaYeung",
 	"engines": {
 		"vscode": "^1.45.0"
 	},
