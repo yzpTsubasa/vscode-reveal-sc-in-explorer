@@ -44,6 +44,23 @@
 					"dark": "images/rocket.svg"
 				}
 			}
+		],
+		"configuration":[
+			{
+				"title": "vscode-git-quick-commit",
+				"properties": {
+					"vscode-git-quick-commit-v2.autoPush": {
+						"type": "boolean",
+						"default": false,
+						"description": "Auto push after commit"
+					},
+					"vscode-git-quick-commit-v2.autoUseTrimLine": {
+						"type": "boolean",
+						"default": false,
+						"description": "Auto use trim line if no selection"
+					}
+				}
+			}
 		]
 	},
 	"scripts": {
