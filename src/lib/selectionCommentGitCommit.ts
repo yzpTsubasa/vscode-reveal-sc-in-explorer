@@ -40,18 +40,22 @@ export default async (options: any): Promise<string> => {
   vscode.workspace.saveAll();
 
 
-
   let commitCmd = `git add . && git commit -m"${input}"`;
   let pushCmd = `git push`;
   return exec(commitCmd, { cwd: workspacePath })
     .then(() => {
-    })
-    .catch((err: Error) => {
-      throw err;
+      if (!config.get("noTip")) {
+        vscode.window.showInformationMessage(`Commit ${input} ${workspacePath}`);
+      }
     })
     .finally(() => {
       if (config.get("autoPush")) {
         exec(pushCmd, { cwd: workspacePath })
+        .then(() => {
+          if (!config.get("noTip")) {
+            vscode.window.showInformationMessage(`Push ${workspacePath}`);
+          }
+        })
       }
     });
 };
