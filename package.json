@@ -2,7 +2,7 @@
 	"name": "vscode-git-quick-commit-v2",
 	"displayName": "Git Quick Commit v2",
 	"description": "Quick commit with select text",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"license": "MIT",
 	"publisher": "TsubasaYeung",
 	"engines": {
@@ -58,6 +58,11 @@
 						"type": "boolean",
 						"default": false,
 						"description": "Auto use trim line if no selection"
+					},
+					"vscode-git-quick-commit-v2.defaultCommitMsg": {
+						"type": "string",
+						"default": "",
+						"description": "Auto use default commit message if no selection"
 					}
 				}
 			}

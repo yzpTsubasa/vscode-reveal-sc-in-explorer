@@ -22,6 +22,9 @@ export default async (options: any): Promise<string> => {
   let config = vscode.workspace.getConfiguration('vscode-git-quick-commit-v2', vscode.Uri.parse(workspacePath));
   // 選択範囲テキスト取得
   let text = editor.document.getText(editor.selection);
+  if (!text) {
+    text = config.get('defaultCommitMsg', '');
+  }
   if (!text && editor.selection.isEmpty && config.get('autoUseTrimLine')) {
     let line = editor.document.lineAt(editor.selection.start);
     text = line && line.text.trim();
