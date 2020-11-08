@@ -2,7 +2,7 @@
 	"name": "vscode-git-quick-commit-v2",
 	"displayName": "Git Quick Commit v2",
 	"description": "Quick commit with select text",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"license": "MIT",
 	"publisher": "TsubasaYeung",
 	"engines": {
@@ -40,8 +40,8 @@
 				"command": "vscode-git-quick-commit.selectionCommentGitCommit",
 				"title": "Selection Comment Git Commit: Quick Commit",
 				"icon": {
-					"light": "images/rocket.svg",
-					"dark": "images/rocket.svg"
+					"light": "images/commit.svg",
+					"dark": "images/commit.svg"
 				}
 			}
 		],
