@@ -1,8 +1,12 @@
 # Change Log
 
-## 0.0.5 (2020-11-08)
+## 0.0.6 (2020-11-08)
 
 - New icon
+
+## 0.0.5 (2020-11-04)
+
+- Add configuration for default commit message
 
 ## 0.0.4 (2020-11-03)
 

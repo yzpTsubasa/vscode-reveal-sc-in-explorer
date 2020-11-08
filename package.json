@@ -58,6 +58,11 @@
 						"type": "boolean",
 						"default": false,
 						"description": "Auto use trim line if no selection"
+					},
+					"vscode-git-quick-commit-v2.defaultCommitMsg": {
+						"type": "string",
+						"default": "",
+						"description": "Auto use default commit message if no selection"
 					}
 				}
 			}
