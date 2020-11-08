@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.7 (2020-11-08)
+
+- New commit icon, support dark & light mode
+
 ## 0.0.6 (2020-11-08)
 
 - New icon
