@@ -1,4 +1,4 @@
 
 export interface ICommand {
-    (): Promise<any>;
+    (context: any): Promise<any>;
 }

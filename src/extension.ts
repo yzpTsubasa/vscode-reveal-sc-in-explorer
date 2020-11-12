@@ -1,5 +1,5 @@
 import * as vscode from 'vscode';
-import selectionCommentGitCommit from './command/selectionCommentGitCommit';
+import revealInExplorer from './command/revealInExplorer';
 import {ICommand} from './command/Command';
 
 
@@ -19,16 +19,18 @@ function handleError(err: Error) {
 
 
 function register(context: vscode.ExtensionContext, command: ICommand, commandName: string) {
-	const proxy = (...args: any) => command().then(handleSuccess).catch(handleError);
-	const disposable = vscode.commands.registerCommand(`vscode-git-quick-commit.${commandName}`, proxy);
+	const proxy = (...args: any) => {
+		return command(args[0]).then(handleSuccess).catch(handleError);
+	};
+	const disposable = vscode.commands.registerCommand(`vscode-reveal-sc-in-explorer.${commandName}`, proxy);
 
 	context.subscriptions.push(disposable);
 }
 
 
 export function activate(context: vscode.ExtensionContext) {
-	console.log('Congratulations, your extension "vscode-git-quick-commit" is now active!');
-	register(context, selectionCommentGitCommit, 'selectionCommentGitCommit');
+	console.log('Congratulations, your extension "vscode-reveal-sc-in-explorer" is now active!');
+	register(context, revealInExplorer, 'revealInExplorer');
 }
 
 

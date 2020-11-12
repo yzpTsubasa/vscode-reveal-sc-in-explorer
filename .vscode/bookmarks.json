@@ -1,0 +1,22 @@
+[
+	{
+		"path": "$ROOTPATH$\\src\\extension.ts",
+		"bookmarks": [
+			{
+				"line": 24,
+				"column": 0,
+				"label": ""
+			}
+		]
+	},
+	{
+		"path": "$ROOTPATH$\\src\\command\\Command.ts",
+		"bookmarks": [
+			{
+				"line": 2,
+				"column": 29,
+				"label": ""
+			}
+		]
+	}
+]

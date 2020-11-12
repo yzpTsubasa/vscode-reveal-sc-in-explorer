@@ -1,8 +1,8 @@
 {
-	"name": "vscode-git-quick-commit-v2",
-	"displayName": "Git Quick Commit v2",
-	"description": "Quick commit with select text",
-	"version": "0.0.7",
+	"name": "vscode-reveal-sc-in-explorer",
+	"displayName": "vscode-reveal-sc-in-explorer",
+	"description": "vscode-reveal-sc-in-explorer",
+	"version": "0.0.1",
 	"license": "MIT",
 	"publisher": "TsubasaYeung",
 	"engines": {
@@ -12,58 +12,47 @@
 		"Other"
 	],
 	"keywords": [
-		"git",
-		"commit",
-		"quick"
+		"reveal",
+		"scm"
 	],
 	"icon": "images/icon.png",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/yzpTsubasa/vscode-git-quick-commit.git"
+		"url": "https://github.com/yzpTsubasa/vscode-reveal-sc-in-explorer.git"
 	},
 	"activationEvents": [
-		"onCommand:vscode-git-quick-commit.selectionCommentGitCommit"
+		"onCommand:vscode-reveal-sc-in-explorer.revealInExplorer"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"menus": {
-			"editor/title": [
+			"scm/title": [
 				{
-					"when": "editorTextFocus",
-					"command": "vscode-git-quick-commit.selectionCommentGitCommit",
-					"group": "navigation@1"
+					"when": "!!scmProvider",
+					"command": "vscode-reveal-sc-in-explorer.revealInExplorer",
+					"group": "navigation"
+				},
+				{
+					"when": "!!scmProvider",
+					"command": "vscode-reveal-sc-in-explorer.revealInExplorer",
+					"group": "inline"
 				}
 			]
 		},
 		"commands": [
 			{
-				"command": "vscode-git-quick-commit.selectionCommentGitCommit",
-				"title": "Selection Comment Git Commit: Quick Commit",
+				"command": "vscode-reveal-sc-in-explorer.revealInExplorer",
+				"title": "revealInExplorer",
 				"icon": {
-					"light": "images/commit@light.svg",
-					"dark": "images/commit@dark.svg"
+					"light": "images/jump@light.svg",
+					"dark": "images/jump@dark.svg"
 				}
 			}
 		],
 		"configuration":[
 			{
-				"title": "vscode-git-quick-commit",
+				"title": "vscode-reveal-sc-in-explorer",
 				"properties": {
-					"vscode-git-quick-commit-v2.autoPush": {
-						"type": "boolean",
-						"default": false,
-						"description": "Auto push after commit"
-					},
-					"vscode-git-quick-commit-v2.autoUseTrimLine": {
-						"type": "boolean",
-						"default": false,
-						"description": "Auto use trim line if no selection"
-					},
-					"vscode-git-quick-commit-v2.defaultCommitMsg": {
-						"type": "string",
-						"default": "",
-						"description": "Auto use default commit message if no selection"
-					}
 				}
 			}
 		]
