@@ -25,9 +25,11 @@ export default async (context: vscode.SourceControl, options: any): Promise<any>
       }
     }
     if (fname) {
-      await vscode.window.showTextDocument(vscode.Uri.parse(`${uri?.path}\\${fname}`), {});
       await vscode.commands.executeCommand('workbench.files.action.collapseExplorerFolders');
-      await vscode.commands.executeCommand("workbench.files.action.showActiveFileInExplorer");
+      await vscode.window.showTextDocument(vscode.Uri.parse(`${uri?.path}\\${fname}`), {});
+      if (vscode.workspace.getConfiguration("explorer").get("autoReveal") === false) {
+        await vscode.commands.executeCommand("workbench.files.action.showActiveFileInExplorer");
+      }
     }
   });
   return;
