@@ -2,7 +2,7 @@
 	"name": "vscode-reveal-sc-in-explorer",
 	"displayName": "vscode-reveal-sc-in-explorer",
 	"description": "vscode-reveal-sc-in-explorer",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"license": "MIT",
 	"publisher": "TsubasaYeung",
 	"engines": {
