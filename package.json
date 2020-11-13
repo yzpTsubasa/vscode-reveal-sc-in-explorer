@@ -2,7 +2,7 @@
 	"name": "vscode-reveal-sc-in-explorer",
 	"displayName": "vscode-reveal-sc-in-explorer",
 	"description": "vscode-reveal-sc-in-explorer",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"license": "MIT",
 	"publisher": "TsubasaYeung",
 	"engines": {
@@ -21,7 +21,7 @@
 		"url": "https://github.com/yzpTsubasa/vscode-reveal-sc-in-explorer.git"
 	},
 	"activationEvents": [
-		"onCommand:vscode-reveal-sc-in-explorer.revealInExplorer"
+		"*"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
