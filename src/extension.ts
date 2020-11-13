@@ -1,5 +1,6 @@
 import * as vscode from 'vscode';
 import revealInExplorer from './command/revealInExplorer';
+import revealInFileExplorer from './command/revealInFileExplorer';
 import {ICommand} from './command/Command';
 
 
@@ -31,6 +32,7 @@ function register(context: vscode.ExtensionContext, command: ICommand, commandNa
 export function activate(context: vscode.ExtensionContext) {
 	console.log('Congratulations, your extension "vscode-reveal-sc-in-explorer" is now active!');
 	register(context, revealInExplorer, 'revealInExplorer');
+	register(context, revealInFileExplorer, 'revealInFileExplorer');
 }
 
 

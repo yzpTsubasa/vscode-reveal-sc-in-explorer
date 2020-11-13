@@ -2,7 +2,7 @@
 	"name": "vscode-reveal-sc-in-explorer",
 	"displayName": "vscode-reveal-sc-in-explorer",
 	"description": "vscode-reveal-sc-in-explorer",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"license": "MIT",
 	"publisher": "TsubasaYeung",
 	"engines": {
@@ -34,7 +34,7 @@
 				},
 				{
 					"when": "!!scmProvider",
-					"command": "vscode-reveal-sc-in-explorer.revealInExplorer",
+					"command": "vscode-reveal-sc-in-explorer.revealInFileExplorer",
 					"group": "inline"
 				}
 			]
@@ -47,13 +47,20 @@
 					"light": "images/jump@light.svg",
 					"dark": "images/jump@dark.svg"
 				}
+			},
+			{
+				"command": "vscode-reveal-sc-in-explorer.revealInFileExplorer",
+				"title": "revealInFileExplorer",
+				"icon": {
+					"light": "images/jump@light.svg",
+					"dark": "images/jump@dark.svg"
+				}
 			}
 		],
-		"configuration":[
+		"configuration": [
 			{
 				"title": "vscode-reveal-sc-in-explorer",
-				"properties": {
-				}
+				"properties": {}
 			}
 		]
 	},

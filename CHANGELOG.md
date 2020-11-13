@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.3 (2020-11-13)
+
+- Add revealInFileExplorer
+
 ## 0.0.2 (2020-11-13)
 
 - Fixed: now explorer can autoReveal when open same file
